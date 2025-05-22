@@ -16,7 +16,7 @@ run steps:
 
 ``` bash
 gcc -shared -o libworld.dylib native_world.c -I"$JAVA_HOME/include" -I"$JAVA_HOME/include/darwin" -Wall -Werror
-kotlinc Main.kt -include-runtime -d hello.jar
+kotlinc Main.kt -d hello.jar
 java -Djava.library.path=. -jar hello.jar
 ```
 
